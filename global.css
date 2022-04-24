@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  color: var(--grey);
+}
+:root{
+  --grey:#393a3d;
+  --white:#fff;
+  --yellow:#FDD559;
+}
+a {
+  text-decoration: none;
+}
+.text-canter {
+  text-align: center;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.asd {
+  max-width: 800px;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
