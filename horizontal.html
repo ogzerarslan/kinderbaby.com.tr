@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .slide {
+        width: 100vw;
+        height: 100vh;
+      }
+      .wrapper {
+        display: flex;
+        /* transform: rotate(90deg) translateX(-100vh); */
+        flex-direction: row;
+        width: 400vw;
+      }
+      .one {
+        background: rgb(214, 83, 83);
+      }
+      .two {
+        background: rgb(83, 155, 214);
+      }
+      .two {
+        background: rgb(21, 64, 99);
+      }
+      .two {
+        background: rgb(21, 99, 44);
+      }
+      /* .outer-wrapper {
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one"></div>
+        <div class="slide two"></div>
+        <div class="slide three"></div>
+        <div class="slide four"></div>
+      </div>
+    </div>
+  </body>
+</html>

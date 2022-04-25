@@ -1,4 +1,4 @@
-body {
+.bodybg {
   background: radial-gradient(
     34.85% 43.98% at 50.89% 56.02%,
     rgba(209, 190, 176, 0.76) 0%,
@@ -39,7 +39,6 @@ nav .menu-btn i {
 }
 
 #main {
-  padding-left: 110px;
   display: flex;
   justify-content: space-between;
   /* flex-wrap: wrap; */
@@ -50,11 +49,11 @@ nav .menu-btn i {
   /* padding-left: 6rem; */
 }
 #main img {
- 
-  width: 100%;
+  position: relative;
   max-width: 800px;
-  height: 100%;
   margin-top: 5rem;
+  margin-right: -50px;
+  z-index: -1;
 }
 #main h1 {
   font-size: 7rem;
@@ -88,6 +87,7 @@ nav .menu-btn i {
 }
 .color-ellipse button {
   cursor: pointer;
+  margin-bottom: 3rem;
 }
 .color-ellipse .beige {
   width: 44px;
@@ -126,7 +126,7 @@ nav .menu-btn i {
 }
 footer {
   background: var(--grey);
-  position: fixed;
+  /* position: ; */
   bottom: 0;
   width: 100%;
 }
@@ -242,15 +242,98 @@ footer .footer-mail {
 }
 .item-2 {
   margin-top: 4rem;
-  margin-left: 8rem;
-  
+  margin-left: 7rem;
 }
-.message-button{
+.message-button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
- 
 }
-.message-button button{
+.message-button button {
+  border: 0px;
   margin-top: 1rem;
+  background: var(--yellow);
+  color: var(--grey);
+  padding: 0.3rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 2px 4px 8px -1px rgba(0, 0, 0, 0.1);
+}
+/* product info */
+.left-navigation {
+  position: fixed;
+  height: 100%;
+  background: var(--yellow);
+  width: 150px;
+}
+.left-navigation i {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
+.left-nav {
+  justify-content: space-between;
+  display: flex;
+  height: 55vh;
+  flex-direction: column;
+  align-items: center;
+}
+/* .left-navigation {
+  width: 150px;
+  height: 100%;
+  background: var(--yellow);
+  position: fixed;
+}
+.left-navigation i {
+  position: absolute;
+  font-size: 2rem;
+  left: 0px;
+  top: 0px;
+} */
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: rgb(45, 184, 184);
+}
+.two {
+  background: rgb(45, 94, 184);
+}
+.three {
+  background: rgb(149, 216, 40);
+}
+.four {
+  background: rgb(153, 63, 189);
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  -ms-overflow-style: none;
+  z-index: -1;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.product-detail {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }

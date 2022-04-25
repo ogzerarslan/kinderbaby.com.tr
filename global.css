@@ -5,10 +5,15 @@
   font-family: "Baloo Bhaijaan 2", cursive;
   color: var(--grey);
 }
-:root{
-  --grey:#393a3d;
-  --white:#fff;
-  --yellow:#FDD559;
+:root {
+  --grey: #393a3d;
+  --white: #fff;
+  --yellow: #fdd559;
+  --greygra: radial-gradient(
+    48.65% 43.61% at 50% 56.39%,
+    #a7abba 0%,
+    #646877 100%
+  );
 }
 a {
   text-decoration: none;
