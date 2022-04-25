@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kinder Baby</title>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="tablet.css">
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 500px)"
+      href="mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bodybg">
+    <header id="header">
+      <nav class="navigation container">
+        <img src="img/logo.svg" alt="Kinder baby Logo" />
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-link">
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="productinfo.html">Ana Kucağı </a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main" class="container ">
+      <div class="product-info colorWhite">
+        <h1 class="colorWhite">Qozee</h1>
+        <h2 class="colorWhite">Ev Tipi Ana Kucağı</h2>
+        <a href="#" class="info colorWhite">İncele</a>
+        <p class="colorWhite">Renkler</p>
+        <div class="color-ellipse">
+          <button  class="beige" onclick="imgSlider('img/beige.png');prcolor('')"></button>
+          <button class="gray" onclick="imgSlider('img/grey.png');prcolor('radial-gradient(48.65% 43.61% at 50% 56.39%, #A7ABBA 0%, #646877 100%)');tcolor('#fff');"></button>
+            <button class="black" onclick="imgSlider('img/black.png');prcolor(' radial-gradient(63% 56.48% at 50% 57.13%, #696969 0%, #212025 95.9%)')"></button>
+            <button class="khaki" onclick="imgSlider('img/khaki.png');prcolor('radial-gradient(63% 56.48% at 50% 57.13%, #898E85 0%, #43493E 78.8%)')"></button>
+         
+        </div>
+      </div>
+      <img src="img/beige.png" alt="qozee ana kucağı bej" class="img-color" />
+    </section>
+    <footer class="">
+      <p class="footer-mail">info@kinderbaby.com.tr</p>
+      <p>Copyright © kinderbaby.com.tr 2022 - Tüm hakları saklıdır.</p>
+    </footer>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector('.img-color').src = anything;
+      }
+      function prcolor(radialGradient){
+        const bodybg = document.querySelector('.bodybg');
+        bodybg.style.background = radialGradient;
+      }
+      // function tcolor(color){
+      //   const colorWhite = document.querySelector('.colorWhite');
+      //   tcolor.style.color ="#fff";
+
+      // }
+      // let gray= document.querySelector('.gray');
+      // gray.addEventListener('click',() ==> body.style.color ='white');
+
+      
+    </script>
+  </body>
 </html>

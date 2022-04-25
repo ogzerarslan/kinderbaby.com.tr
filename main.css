@@ -1,4 +1,5 @@
 .bodybg {
+  height: 100vh;
   background: radial-gradient(
     34.85% 43.98% at 50.89% 56.02%,
     rgba(209, 190, 176, 0.76) 0%,
@@ -328,12 +329,11 @@ footer .footer-mail {
   display: none;
 }
 .product-detail {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 0px;
-  margin-right: 0px;
+
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  
 }
