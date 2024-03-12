@@ -1,3 +1,9 @@
+.footer-fixed {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .bodybg {
   height: 100vh;
   background: radial-gradient(
@@ -16,7 +22,6 @@
   padding-right: 25px;
   display: flex;
   justify-content: space-between;
-  /* flex-wrap:wrap; */
   align-items: center;
   align-content: center;
   height: 120px;
@@ -25,9 +30,16 @@
   display: flex;
   align-content: center;
 }
+
 .nav-link a {
   margin-left: 2rem;
   font-weight: 900;
+  transition: 0.3s;
+}
+.nav-link a:hover {
+  color: var(--yellow);
+
+  border: 3px;
 }
 /* nav icon */
 nav .menu-btn i {
@@ -53,9 +65,18 @@ nav .menu-btn i {
   position: relative;
   max-width: 800px;
   margin-top: 5rem;
-  margin-right: -50px;
+  margin-right: -80px;
   z-index: -1;
 }
+.img-mobil {
+  display: none;
+  position: relative;
+  max-width: 800px;
+  margin-top: 5rem;
+  margin-right: -80px;
+  z-index: -1;
+}
+
 #main h1 {
   font-size: 7rem;
 }
@@ -66,11 +87,15 @@ nav .menu-btn i {
 
 #main .product-info .info {
   border: 1.5px solid var(--grey);
-  padding: 0.3rem 2rem;
+  padding: 0.4rem 2rem;
   border-radius: 10px;
   font-size: 1.2 rem;
   font-weight: 700;
   box-shadow: 2px 4px 8px -1px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+.info:hover {
+  background: var(--yellow);
 }
 #main .product-info h1 {
   line-height: 1;
@@ -81,6 +106,7 @@ nav .menu-btn i {
   font-weight: 700;
   margin-top: 200px;
 }
+
 /* qozee color ellipse */
 
 .color-ellipse {
@@ -89,19 +115,19 @@ nav .menu-btn i {
 .color-ellipse button {
   cursor: pointer;
   margin-bottom: 3rem;
+  width: 40px;
+  height: 40px;
 }
 .color-ellipse .beige {
-  width: 44px;
-  height: 44px;
   background: #d3b5a0;
   border: 2.5px solid var(--white);
   border-radius: 100%;
   box-shadow: 2px 4px 8px -1px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
 }
 .color-ellipse .gray {
   margin-left: 1.7rem;
-  width: 40px;
-  height: 40px;
+
   background: #646877;
   border: 2.5px solid var(--white);
   border-radius: 100%;
@@ -125,11 +151,31 @@ nav .menu-btn i {
   border-radius: 100%;
   box-shadow: 2px 4px 8px -1px rgba(0, 0, 0, 0.25);
 }
+.beige:hover {
+  border: 2.5px solid var(--yellow);
+  opacity: 90%;
+}
+.beige:active {
+  border: 2.5px solid var(--yellow);
+  opacity: 90%;
+}
+.gray:hover {
+  border: 2.5px solid var(--yellow);
+  opacity: 90%;
+}
+.black:hover {
+  border: 2.5px solid var(--yellow);
+  opacity: 90%;
+}
+.khaki:hover {
+  border: 2.5px solid var(--yellow);
+  opacity: 90%;
+}
 footer {
   background: var(--grey);
-  /* position: ; */
   bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 footer p {
   text-align: center;
@@ -183,10 +229,16 @@ footer .footer-mail {
   box-shadow: 2px 4px 8px -1px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   margin-top: 3rem;
+  transition: 0.3s;
+}
+.btn-yellow:hover {
+  background: var(--grey);
+  color: var(--yellow);
 }
 
 /* contact */
 .contact {
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   padding: left 25px;
@@ -227,6 +279,7 @@ footer .footer-mail {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .form-control {
   width: 330px;
@@ -260,80 +313,13 @@ footer .footer-mail {
   font-size: 1rem;
   font-weight: 700;
   box-shadow: 2px 4px 8px -1px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
-/* product info */
-.left-navigation {
-  position: fixed;
-  height: 100%;
-  background: var(--yellow);
-  width: 150px;
+.contact-button:hover {
+  background-color: var(--grey);
+  color: var(--yellow);
 }
-.left-navigation i {
-  font-size: 2.5rem;
-  padding-top: 2rem;
-}
-.left-nav {
-  justify-content: space-between;
-  display: flex;
-  height: 55vh;
-  flex-direction: column;
-  align-items: center;
-}
-/* .left-navigation {
-  width: 150px;
-  height: 100%;
-  background: var(--yellow);
-  position: fixed;
-}
-.left-navigation i {
-  position: absolute;
-  font-size: 2rem;
-  left: 0px;
-  top: 0px;
-} */
-.slide {
-  width: 100vw;
-  height: 100vh;
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 400vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
-.one {
-  background: rgb(45, 184, 184);
-}
-.two {
-  background: rgb(45, 94, 184);
-}
-.three {
-  background: rgb(149, 216, 40);
-}
-.four {
-  background: rgb(153, 63, 189);
-}
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  -ms-overflow-style: none;
-  z-index: -1;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-.product-detail {
-
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  
+.formtext {
+  font-weight: 700;
+  color: var(--yellow);
 }
